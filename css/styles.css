@@ -89,6 +89,7 @@ img {
         text-transform: uppercase;
 }
 .mobile-menu-container {
+ display: block;
     position: relative;
 }
 .mobile-menu-open-btn {
@@ -98,16 +99,23 @@ img {
     line-height: 0;
     stroke: black;
 }
+/*вопрос по бордеру*/
 .mobile-menu-close-btn {
     position: absolute;
-    top: 0px;
+    flex-direction: column;
+    top: 0x;
     right: 0;
-    background-color: transparent;
-        border: none;
-        padding: 0;
+    width: 24px;
+    height: 24px;   
+    background-color: transparent;       
+       padding-top: 21px;
+       padding-left: 256px;
+       padding-bottom: 24px;
         line-height: 0;
         stroke: black;
-       
+        border: 1px;
+            border-radius: 50%;
+            border-color: rgba(46, 47, 66, 1);  
 }
 
 .mobile-menu-wrapper {
@@ -118,12 +126,34 @@ img {
     width: 100%;
     height: 100%;
     background-color: #FFF;
-  
+    transform: translateX(100%);
+    transition: transform 250ms linear;
 }
+
 .mobile-menu-wrapper.is-open {
     transform: translateX(0%);
 }
+.mobile-menu-link {
+    color:  #2E2F42;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        padding-left: 16px;
+       
 
+}
+
+.mobile-adress-list-link {
+    color: #434455;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        padding-left: 16px;
+        gap: 24px;
+}
 .page-header-container {
     display: flex;
     align-items: center;
