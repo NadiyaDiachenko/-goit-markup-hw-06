@@ -101,21 +101,25 @@ img {
 }
 /*вопрос по бордеру*/
 .mobile-menu-close-btn {
+    
+display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    flex-direction: column;
-    top: 0x;
-    right: 0;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
     width: 24px;
-    height: 24px;   
-    background-color: transparent;       
-       padding-top: 21px;
-       padding-left: 256px;
-       padding-bottom: 24px;
-        line-height: 0;
-        stroke: black;
-        border: 1px;
-            border-radius: 50%;
-            border-color: rgba(46, 47, 66, 1);  
+    height: 24px;
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-wrapper {
@@ -134,15 +138,27 @@ img {
     transform: translateX(0%);
 }
 .mobile-menu-link {
-    color:  #2E2F42;
+    display: block;   
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        color: #2E2F42;
         padding-left: 16px;
-       
+            
 
+}
+.mobile-menu-item {
+   padding-top: 40px;
+}
+.mobile-adress-list-item {
+    display: block;
+    color: #434455;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
 }
 
 .mobile-adress-list-link {
@@ -153,6 +169,32 @@ img {
         letter-spacing: 0.02em;
         padding-left: 16px;
         gap: 24px;
+}
+.mobile-social-container {
+    align-content: center;
+        justify-content: center;
+        gap: 16px;
+        margin-right: 80px;
+}
+.conteiner-sothial{
+    width: 40px;
+        height: 40px;
+}
+.link-sotial {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #4d5ae5;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        height: 100%;
+        column-gap: 24px;
+}
+.mobile-menu-social-list {
+    display: flex;
+        gap: 24px;
+        justify-content: center;
 }
 .page-header-container {
     display: flex;
