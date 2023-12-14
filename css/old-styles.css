@@ -74,7 +74,6 @@ body {
     font-family: 'Roboto',
         sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -217,7 +216,7 @@ body {
     margin-right: auto;
     margin-bottom: 48px;
     max-width: 496px;
-
+width: 496px;
 }
 
 .visually-hidden {
@@ -251,9 +250,6 @@ body {
 
 }
 
-.title-section-one {
-    width: 496px;
-}
 
 .button-order {
     color: white;
