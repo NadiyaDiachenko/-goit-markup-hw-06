@@ -312,6 +312,7 @@ img {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        margin-top: 8px;
 }
 .advantages-menu {
    
@@ -423,6 +424,20 @@ img {
  }
  
  /*=====/TABLET HERO STYLES===*/
+ /*=====TABLET ADVANTAGES STULES===*/
+.advantages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+.advantages-menu {
+        width: calc((100% - 24px) / 2);
+            margin-bottom: 72px;
+}
+
+ /*=====/TABLET ADVANTAGES STULES===*/
  @media screen and (min-width:1158px) {
      .container {
          max-width: 1158px;
@@ -458,4 +473,37 @@ img {
   }
  
   /*====/DESKTOP HEADER STYLES====*/
+   /*=====DESKTOP ADVANTAGES STULES===*/
+   .advantages-menu {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+   }
+  .svg-conteiner {
+    display: flex;
+        align-items: center;
+            justify-content: center;
+            width: 264px;
+            height: 112px;
+            border: 1px solid #8E8F99;
+            border-radius: 4px;
+            background-color: #F4F4FD;
+            margin-bottom: 8px;
+            padding: 24px px 100px;
+  }
+  .title-too-h {
+    color: #2E2F42;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+  }
+  .paragraph {
+    color: #434455;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+  }
+   /*=====/DESKTOP ADVANTAGES STULES===*/
  
