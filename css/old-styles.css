@@ -487,15 +487,14 @@ width: 496px;
 .title-four {
     color: #2E2F42;
     text-align: center;
-    /* Header 2 */
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.1;
-    /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
+        
 }
 
 .list-section-four {
