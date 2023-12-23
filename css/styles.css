@@ -91,7 +91,8 @@ img {
     justify-content: space-between;
 }
 .page-header {
-    padding-top: 16px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
 }
  /*====MOBILE HEADER STYLES====*/
 
@@ -148,14 +149,20 @@ img {
 /*====/MOBILE HERO STYLES====*/
 
  /*=====MOBIL ADVANTAGES STULES===*/
-
+.section-mein{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.team-section {
+    background-color: #F4F4FD;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 
 .advantages {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    margin-top: 96px;
-    margin-bottom: 96px;
 }
 
 .title-too-h {
@@ -210,10 +217,7 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 96px;
-
-
-}
+   }
 
 .title-three-name {
     color: #2E2F42;
@@ -295,6 +299,10 @@ img {
 
   /*=====/MOBIL OUR TEAM STULES===*/
   /*=====MOBIL SEKTION PORTFOLIO*/
+  .section-our-portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 
  .overlay {
      position: relative;
@@ -331,7 +339,7 @@ img {
      letter-spacing: 0.02em;
      text-transform: capitalize;
      margin-bottom: 72px;
-     margin-top: 96px;
+    
  }
 
 
@@ -439,7 +447,7 @@ img {
 .div-futer-logo-paragraf {
    display: flex;
    flex-direction: column;
-   gap: 18.5px;
+  gap: 16px;
 }
 
 
@@ -468,8 +476,7 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 288px;
-    margin-bottom: 36px;
+    max-width: 264px;
 }
 .paragraph-foter-social-media {
    
@@ -797,7 +804,9 @@ img {
  @media screen and (max-width:767px) {
     .mobile-menu-container {
             display: block;
-            position: relative;
+            margin-left: 0;
+            margin-right: 0;
+           
         }
     
         .mobile-menu-open-btn {
@@ -841,6 +850,12 @@ img {
             transform: translateX(100%);
             transition: transform 250ms linear;
         }
+        .mobile-menu-navigation {
+            padding-top: 72px;
+            padding-bottom: 168px;
+            padding-left: 0px;
+            padding-right: 128px;
+        }
     
         .mobile-menu-wrapper.is-open {
             transform: translateX(0%);
@@ -855,28 +870,24 @@ img {
             text-transform: capitalize;
             color: #2E2F42;
         }
-    
+        .mobile-adress-list {
+            margin-bottom: 24px;
+        }
+      
         .ul-conteiner-sothial {
             display: flex;
             gap: 24px;
             justify-content: center;
-            margin-top: 48px;
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         }
     
-        .mobile-menu {
-            margin-top: 53px;
-            gap: 40px;
-        }
+       .mobile-menu-item {
+        margin-bottom: 40px;
+       }
+       
     
-        .mobile-menu-item {
-            padding-top: 40px;
-        }
-    
-        .mobile-adress-list {
-            margin-top: 168px;
-        }
+        
     
         .mobile-adress-list-item {
             display: block;
@@ -885,6 +896,7 @@ img {
             font-weight: 500;
             line-height: 1.2;
             letter-spacing: 0.02em;
+            margin-bottom: 24px;
         }
     
         .mobile-adress-list-link {
@@ -895,6 +907,13 @@ img {
             letter-spacing: 0.02em;
             gap: 24px;
         }
+                  .color-studio {
+                      color: #404BBF;
+                  }
+        
+                  .color-tel-mobile-menu-link {
+                      color: #4D5AE5;
+                  }
     
         .mobile-social-container {
             align-content: center;
@@ -973,8 +992,14 @@ img {
     .section-mein {
         display: flex;
         flex-direction: column;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
  /*====TABLET HEADER STYLES====*/
+ .page-header {
+     padding-top: 0;
+     padding-bottom: 0;
+ }
          .mobile-menu-open-btn {
              display: none;
          }
@@ -989,7 +1014,8 @@ img {
      gap: 40px;
     padding-top: 24px;
      padding-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);            
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);     
+    color: rgba(46, 47, 66, 1);       
                                 }
                 .menu-link::after {
                     left: 0;
@@ -1038,16 +1064,17 @@ img {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin-bottom: 16px;
-        
+              
      }
      .mail-link {
         color:  #434455;
             font-family: Roboto;
+            font-style: normal;
             font-size: 12px;
             font-weight: 400;
             line-height: 1.16;
             letter-spacing: 0.04em;
+            
      }
     
 
@@ -1060,6 +1087,8 @@ img {
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
             url(../images/hero/Dark-bg-tablet1.jpg);
+            padding-top: 112px;
+            padding-bottom: 112px;
 
   }
 
@@ -1084,11 +1113,11 @@ img {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-between;
-    margin-top: 96px;
+   
 }
 .advantages-menu {
         width: calc((100% - 24px) / 2);
-            margin-bottom: 72px;
+
 }
 .title-too-h {
     color:  #2E2F42;
@@ -1097,6 +1126,7 @@ img {
         line-height: 1.1;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        text-align: left;
 }
 .paragraph {
     color:  #434455;    
@@ -1108,6 +1138,10 @@ img {
 
  /*=====/TABLET ADVANTAGES STULES===*/
  /*=======TABLET OUR TEAM STULES*/
+ .team-section {
+     padding-top: 96px;
+     padding-bottom: 96px;
+ }
  .team{
     display: flex;
     flex-wrap: wrap;
@@ -1132,6 +1166,7 @@ img {
 /*====/TABLET PORTFOLIO STULES====*/
 
 /*====TABLET FOOTER STULES===*/
+ 
 .footer-container {
     text-align: left;
     gap: 16px;
@@ -1148,7 +1183,11 @@ img {
     .container-team-section-four{
         max-width: 584px;
     }
-    
+        .conteiner-futer {
+            max-width: 584px;
+            gap: 72px 24px;
+        }
+      
 
 }
 
@@ -1205,9 +1244,15 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
  
   /*====/DESKTOP HEADER STYLES====*/
    /*=====DESKTOP ADVANTAGES STULES===*/
+
+   .section-mein {
+       padding-top: 120px;
+       padding-bottom: 120px;
+   }
+  
    .advantages-menu {
     width: calc((100% - 72px) / 4);
-    margin-bottom: 0;
+    
    }
 
   .svg-conteiner {
@@ -1275,20 +1320,19 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
       width: calc((100% - 48px) / 3);
 
   }
-  .title-four {
-    margin-top: 120px;
-  }
+ 
   /*===DESKTOP FOOTER STYLES===*/
 .footer-subscrib{
-    margin-left: 96px;
-    margin-right: 0cm;
+    margin-left: 80px;
+   
 }
 .container {
     flex-wrap: nowrap;
 }
-.paragraph-foter {
+.div-futer-logo-paragraf {
     margin-right: 120px;
 }
+
   /*===DESKTOP FOOTER STYLES===*/
 
 }
